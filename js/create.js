@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable no-tabs */
 /* eslint-disable linebreak-style */
 /* eslint-disable no-mixed-spaces-and-tabs */
