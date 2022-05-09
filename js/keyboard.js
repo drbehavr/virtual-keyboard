@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable no-dupe-else-if */
 /* eslint-disable linebreak-style */
 /* eslint-disable max-len */
@@ -11,7 +12,7 @@
 import * as storage from './storage.js';
 import create from './create.js';
 import language from './index.js';
-import Key from './key.js';
+import Key from './Key.js';
 
 const main = create(
   'main',
