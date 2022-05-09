@@ -1,0 +1,177 @@
+/*common settings*/
+:root {
+   font-size: 18px;
+}
+body {
+   background: url(../assets/board.png) no-repeat;
+   background-size: cover;
+   font-family: 'Jura', sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+}
+textarea {
+   padding: 10px;
+   outline:none;
+   height: 100px;
+   font-family: 'Jura';
+}
+.output {
+   width: 100%;
+}
+.title { 
+   font-family: 'Jura', sans-serif;
+   font-size: 1.7rem;
+   text-align: center;
+   margin: 20px 0 20px 0;
+   color: ghostwhite;
+}
+.letter {
+   width: 100%;
+   text-align: center;
+}
+.subtitle {
+   font-family: 'Jura', sans-serif;
+   font-size: 18px;
+   color: ghostwhite;
+   text-align: center;
+   margin: 10px auto;
+
+}
+.hint {
+   font-family: 'Jura', sans-serif;
+   font-size: 18px;
+   color: ghostwhite;
+   text-align: center;
+   margin: 10px auto;
+}
+/*keys*/
+.keyboard {
+   
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 10px;
+   border: 1px solid grey;
+   background: transparent;
+   transition: 0.5s;
+   display: grid;
+   grid-template-rows: auto;
+   grid-gap: 5px;
+}
+
+.keyboard__key {
+	transform: scale(1.1);
+   cursor: pointer;
+   height: 40px;
+   transition: all 2s ease;
+   color: white;
+   
+   font-size: 13px;
+   text-align: center;
+   display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	
+	float: left;
+	position: relative;
+	
+	height: 40px;
+   background: lightblue;
+   box-shadow: inset 0px -1px 2px rgba(255, 255, 255, 0.3);
+   border: 1px solid rgba(0, 0, 0, 0.4);
+   text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+   font-weight: 600;
+   font-family: 'Jura';
+}
+.keyboard__key[data-fn='true'] {
+   background: rgb(9 142 163);
+   color: white;
+}
+.keyboard__row {
+   display: grid;
+   grid-gap: 5px;
+}
+
+div[data-code="Tab"] {
+   width: 80px;
+}
+div[data-code="CapsLock"] {
+   width: 91px;
+}
+div[data-code="Enter"] {
+   width: 97px;
+}
+div[data-code="ShiftLeft"] {
+   width: 96px;
+}
+div[data-code="ShiftRight"] {
+   width: 92px;
+}
+div[data-code="ControlRight"] {
+   width: 54px;
+}
+div[data-code="ControlLeft"] {
+   width: 50px;
+}
+div[data-code="Space"] {
+   width: 276px;
+}
+div[data-code="AltLeft"] {
+   width: 50px;
+}
+div[data-code="Hide"] {
+   width: 50px;
+}
+div[data-code="Backspace"] {
+   width: 108px;
+}
+
+.sub {
+   text-align: left;
+   font-size: 0.8rem;
+   color: gray;
+}
+.sub.sub-active:not(:empty) ~ .letter.sub-inactive {
+   color: #68688a;
+   font-size: 10px;
+   text-align: center;
+ 
+   width: 50%;
+   transform-origin: center;
+   transform: translateX(10px);
+
+}
+.sub.sub-active:not(:empty) {
+   color: ghostwhite;
+   font-size: 14px;
+}
+
+.active {
+      background:rgb(198, 212, 0) !important;
+      
+      transition: 0.2s;
+  }
+  
+  .keyboard.hidden {
+   position: fixed;
+   bottom: -100%;
+   transition: 0.4s;
+}
+
+   .keyboard, .active {
+   
+      background: radial-gradient(circle farthest-corner at 100px 50px, #272625, #520a79);
+    
+		animation: show 3s 1;
+   }
+/*hide animation*/
+@keyframes show {
+	0%{
+	opacity:0;
+	}
+	100% {
+	opacity:1;
+	}
+	}
