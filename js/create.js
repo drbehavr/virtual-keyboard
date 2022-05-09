@@ -9,16 +9,17 @@
  * @param {HTMLElement} parent
  * @param  {...array} dataAttr
  */
-
+// заготовка,функция для отрисовки клавиатуры,
 export default function create(el, classNames, child, parent, ...dataAttr) {
   let element = null;
+  // ошибка
   try {
 	  element = document.createElement(el);
   } catch (error) {
-	  throw new Error('Unable to create HTMLElement! Give a proper tag name');
+	  throw new Error('Unable to create HTMLElement!');
   }
 
-  if (classNames) element.classList.add(...classNames.split(' ')); // "class1 class2 class3"
+  if (classNames) element.classList.add(...classNames.split(' '));
 
   if (child && Array.isArray(child)) {
 	  child.forEach((childElement) => childElement && element.appendChild(childElement));

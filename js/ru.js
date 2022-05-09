@@ -274,11 +274,6 @@ export default [
 	  code: 'Slash',
   },
   {
-	  small: 'Sound',
-	  shift: null,
-	  code: 'Sound',
-  },
-  {
 	  small: 'Ctrl',
 	  shift: null,
 	  code: 'ControlLeft',
@@ -334,8 +329,8 @@ export default [
 	  code: 'LangKey',
   },
   {
-	  small: '',
-	  shift: null,
-	  code: 'Microphone',
+    small: 'Shift',
+    shift: null,
+    code: 'ShiftRight',
   },
 ];
