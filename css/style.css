@@ -3,7 +3,7 @@
    font-size: 18px;
 }
 body {
-   background: url(/assets/board.png) no-repeat;
+   background: url(../assets/board.png) no-repeat;
    background-size: cover;
    font-family: 'Jura', sans-serif;
    display: flex;
@@ -54,7 +54,7 @@ textarea {
    padding: 10px;
    border: 1px solid grey;
    background: transparent;
-   transition: .5s;
+   transition: 0.5s;
    display: grid;
    grid-template-rows: auto;
    grid-gap: 5px;
@@ -145,7 +145,8 @@ div[data-code="Backspace"] {
 }
 .sub.sub-active:not(:empty) {
    color: ghostwhite;
-   font-size: 14px;}
+   font-size: 14px;
+}
 
 .active {
       background: rgb(15, 61, 99) !important;
@@ -156,10 +157,11 @@ div[data-code="Backspace"] {
   .keyboard.hidden {
    position: fixed;
    bottom: -100%;
-   transition: 0.4s;}
+   transition: 0.4s;
+}
 
-   .keyboard,.active {
-      /*background: rgb(15, 61, 99) !important;*/
+   .keyboard.active {
+   
       background: radial-gradient(circle farthest-corner at 100px 50px, #272625, #520a79);
     
 		animation: show 3s 1;
