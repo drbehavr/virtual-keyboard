@@ -86,7 +86,7 @@ textarea {
    font-family: 'Jura';
 }
 .keyboard__key[data-fn='true'] {
-   background: rgb(235, 229, 144);
+   background: rgb(9 142 163);
    color: white;
 }
 .keyboard__row {
@@ -149,7 +149,7 @@ div[data-code="Backspace"] {
 }
 
 .active {
-      background: rgb(15, 61, 99) !important;
+      background:rgb(198, 212, 0) !important;
       
       transition: 0.2s;
   }
