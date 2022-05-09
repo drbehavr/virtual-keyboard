@@ -160,7 +160,7 @@ div[data-code="Backspace"] {
    transition: 0.4s;
 }
 
-   .keyboard.active {
+   .keyboard, .active {
    
       background: radial-gradient(circle farthest-corner at 100px 50px, #272625, #520a79);
     
